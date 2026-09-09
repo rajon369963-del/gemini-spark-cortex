@@ -1,0 +1,7 @@
+{
+  "task_id": "task_1788916215974",
+  "intent": "test_intent",
+  "status": "COMPLETED",
+  "execution_time_ms": 0.0,
+  "output": "Executed intent 'test_intent' successfully on local Antigravity kernel."
+}
