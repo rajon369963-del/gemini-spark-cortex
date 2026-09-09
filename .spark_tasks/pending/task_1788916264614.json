@@ -1,9 +1,0 @@
-{
-  "task_id": "task_1788916264614",
-  "intent": "test_intent",
-  "payload": {
-    "data": 42
-  },
-  "timestamp": 1788916264.614141,
-  "status": "QUEUED"
-}
