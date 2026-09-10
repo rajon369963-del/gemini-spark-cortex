@@ -1,0 +1,76 @@
+{
+  "version": "TRI_REPO_FEDERATION_V2",
+  "date": "2026-09-11",
+  "control_plane": "rajon369963-del/gemini-spark-cortex",
+  "canonical_skill": "prompts/TRI_REPO_10_SCHEDULE_FEDERATION_V2.md",
+  "product_repositories": {
+    "A": {
+      "repo": "rajon369963-del/sovereign-study-commons-india",
+      "role": "study-data commons, learner/data/provenance/adoption",
+      "default_share_weight": 20
+    },
+    "B": {
+      "repo": "rajon369963-del/civex-progressive-bridge",
+      "role": "progressive tool disclosure, routing, packaging, benchmark/reliability",
+      "default_share_weight": 20
+    },
+    "C": {
+      "repo": "rajon369963-del/sovereign-quant-os",
+      "role": "failure-oriented trading execution, idempotency, reproducibility, quant reliability",
+      "default_share_weight": 20
+    }
+  },
+  "original_worker_mission_weight": 40,
+  "selection_policy": {
+    "fresh_read_all_three_each_run": true,
+    "max_primary_mutation_repos_per_run": 1,
+    "optional_secondary_repo_read_only": true,
+    "rolling_productive_runs_fairness_window": 3,
+    "severity_overrides_fairness": true
+  },
+  "lanes": {
+    "01": "Truth Radar / Canonical Controller",
+    "02": "Pain Hunter / Problem Market",
+    "03": "Interconnection2 Forge",
+    "04": "Venture Builder / Maintainer",
+    "05": "Independent Reality Court",
+    "06": "Release & Supply-Chain Steward",
+    "07": "Community & Adoption Steward",
+    "08": "Security & Privacy Court",
+    "09": "Repro & Benchmark Court",
+    "10": "Federation Steward / Arbitration Court"
+  },
+  "cross_repo_knowledge_atom_required_fields": [
+    "KNOWLEDGE_ATOM_ID",
+    "SOURCE_REPO",
+    "SOURCE_SHA",
+    "SOURCE_MECHANISM",
+    "SOURCE_EVIDENCE",
+    "TARGET_REPO",
+    "TARGET_PROBLEM",
+    "TRANSFER",
+    "SMALLEST_ADAPTER",
+    "COMPATIBILITY_TEST",
+    "NO_REGRESSION_TEST",
+    "ROLLBACK",
+    "OWNER",
+    "VERIFIER",
+    "FRESH_UNTIL_OR_RECHECK_TRIGGER",
+    "STATUS"
+  ],
+  "shared_skill_promotion": {
+    "minimum_independent_successful_uses": 2,
+    "requires_failure_conditions": true,
+    "requires_repo_adapters": true,
+    "requires_verifier_readback": true,
+    "requires_version_and_rollback_sha": true
+  },
+  "safety": {
+    "no_quota_or_rate_limit_evasion": true,
+    "no_credential_sharing_between_accounts": true,
+    "producer_not_final_verifier": true,
+    "no_direct_main_by_default_even_if_unprotected": true,
+    "simulation_not_live_pnl": true,
+    "forum_advice_is_hypothesis_until_verified": true
+  }
+}
