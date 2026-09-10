@@ -1,8 +1,9 @@
 # TASK 016: Sovereign Quant OS Execution Kernel Stress Scenarios & Idempotency Audit
 
 - **Task ID**: `TASK_016`
-- **Priority**: High
-- **Target Lanes**: `Lane 02` (Pain Hunter), `Lane 04` (Venture Builder & Maintainer), `Lane 10` (Federation Steward / Arbitration Court)
+- **Priority**: Critical
+- **Weight**: 40% (Trading Domain - Focus 1)
+- **Target Lanes**: `Lane 02` (Pain Hunter), `Lane 04` (Venture Builder & Maintainer)
 - **Primary Repository**: `rajon369963-del/sovereign-quant-os`
 - **Status**: `QUEUED`
 - **Created**: 2026-09-11T05:30:00+05:30
@@ -17,6 +18,6 @@ Stress test the failure-oriented execution kernel and verify wire idempotency:
    - Validate SQLite WAL sandwich commit integrity during abrupt process interruption.
 
 ## Deliverable & Invariants
-- Add stress scenarios to test harness.
+- Add stress scenarios to `test_friction_cortex_stress.py` or new test battery.
 - Verify zero duplicate executions under simulated retry storms.
 - Log exact execution receipts into the shared coordination ledger.

@@ -30,12 +30,12 @@ Every worker follows this order:
 
 Each run must minimally fresh-read HEAD/default branch and critical health signal for A, B and C, plus the newest relevant CONTROL receipt. Then choose **one primary mutation target**. A second repo may be inspected/read-only for transfer evidence. Do not spray writes across all repos in one run.
 
-Default productive budget over a rolling window:
+Default productive budget over a rolling window (Updated Sep 11, 2026 Founder Mandate):
 
-- ~20% REPO_A
-- ~20% REPO_B
-- ~20% REPO_C
-- ~40% worker's original mission
+- ~40% REPO_C (`sovereign-quant-os` — Trading execution kernel, risk models, L2 DMA, arbitrage)
+- ~20% REPO_A (`sovereign-study-commons-india` — Study-data commons, derivations, provenance)
+- ~20% REPO_B (`civex-progressive-bridge` — Progressive tool disclosure, routing, contracts)
+- ~20% CONTROL & Mission (`gemini-spark-cortex` — Swarm orchestration, receipts, arbitration)
 
 This is a fairness target, not a per-run quota. Highest verified severity wins. Over any rolling 3 productive runs, each repo should receive at least one meaningful fresh inspection unless frozen/blocked/explicitly deprioritized.
 

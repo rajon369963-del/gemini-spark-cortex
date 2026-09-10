@@ -2,7 +2,8 @@
 
 - **Task ID**: `TASK_014`
 - **Priority**: High
-- **Target Lanes**: `Lane 01` (Truth Radar), `Lane 03` (Interconnection² Forge / Socratic), `Lane 05` (Independent Reality Court)
+- **Weight**: 20% (Study Domain)
+- **Target Lanes**: `Lane 03` (Interconnection² Forge / Socratic), `Lane 07` (Community & Adoption Steward)
 - **Primary Repository**: `rajon369963-del/sovereign-study-commons-india`
 - **Status**: `QUEUED`
 - **Created**: 2026-09-11T05:30:00+05:30

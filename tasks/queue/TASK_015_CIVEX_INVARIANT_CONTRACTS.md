@@ -2,7 +2,8 @@
 
 - **Task ID**: `TASK_015`
 - **Priority**: High
-- **Target Lanes**: `Lane 06` (Release & Supply-Chain Steward), `Lane 08` (Security & Privacy Court), `Lane 09` (Repro & Benchmark Court)
+- **Weight**: 20% (CivEx Domain)
+- **Target Lanes**: `Lane 05` (Independent Reality Court), `Lane 09` (Repro & Benchmark Court)
 - **Primary Repository**: `rajon369963-del/civex-progressive-bridge`
 - **Status**: `QUEUED`
 - **Created**: 2026-09-11T05:30:00+05:30

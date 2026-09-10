@@ -20,10 +20,10 @@
     "C": {
       "repo": "rajon369963-del/sovereign-quant-os",
       "role": "failure-oriented trading execution, idempotency, reproducibility, quant reliability",
-      "default_share_weight": 20
+      "default_share_weight": 40
     }
   },
-  "original_worker_mission_weight": 40,
+  "control_plane_and_mission_weight": 20,
   "selection_policy": {
     "fresh_read_all_three_each_run": true,
     "max_primary_mutation_repos_per_run": 1,
