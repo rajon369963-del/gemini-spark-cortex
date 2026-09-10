@@ -20,4 +20,9 @@
    - **Zero-Delta Cash & Carry Basis Harvester**: Market-direction-neutral basis carry ($\Delta \approx 0$) with strict 5-day payback gating and maker rebates.
    - **Tri-Court Verification Harness**: Independent adversarial verification suite (Codex, Hermes, ChatGPT).
    - **Failure-Oriented Architecture**: Calibrated positioning emphasizing friction gates, noise rejection (79.5%), and execution safety over speculative alpha.
-3. **Status**: `CI_GREEN_AND_PUBLIC_RELEASE_VERIFIED` (CI Run 34520950479 SUCCESS on 59b487e, Admin Branch Protection Enforced)
+3. **Governance, Privacy & Truth Ledger**:
+   - **Active Git DAG Privacy**: 🟢 PROVEN CLEAN (0 bytes of removed files in active tree, verified across clean clone).
+   - **GitHub Cached SHA View (`9edfce7`)**: 🟡 STILL ACCESSIBLE via direct SHA lookup in GitHub backend cache; verified 0 credentials/keys in removed prompt file; official documented purge route is GitHub Support server GC.
+   - **Capsule Bookkeeping**: `PORTABLE_REPRO_CAPSULE.tar.gz` contains exactly 70 items (69 repository files + 1 top-level Hermes verifier copy); SHA256: `0d40e6cf0782eee02d370e9f019ccd06e7858b433651c446b0ff44a95ac6f435`.
+   - **Real-Money PnL**: ⚪ NOT ATTESTED (Failure-oriented execution kernel & simulated basis carry model only).
+4. **Status**: `CI_GREEN_AND_PUBLIC_RELEASE_VERIFIED` (CI Run 34520950479 SUCCESS on 59b487e, Admin Branch Protection Enforced)
