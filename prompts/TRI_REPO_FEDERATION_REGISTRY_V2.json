@@ -1,8 +1,11 @@
 {
-  "version": "TRI_REPO_FEDERATION_V2",
+  "version": "TRI_REPO_FEDERATION_V2_1",
   "date": "2026-09-11",
   "control_plane": "rajon369963-del/gemini-spark-cortex",
-  "canonical_skill": "prompts/TRI_REPO_10_SCHEDULE_FEDERATION_V2.md",
+  "canonical_overlay": "prompts/TRI_REPO_10_SCHEDULE_FEDERATION_V2.md",
+  "canonical_shared_skill": "skills/TRI_REPO_SHARED_MAINTAINER_SKILL_V2.md",
+  "forum_research_ledger": "research/FORUM_TOP30_OPERATIONS_LEDGER_20260911.md",
+  "account_b_import_pack": "prompts/ACCOUNT_B_LANES_06_10_IMPORT_V2.md",
   "product_repositories": {
     "A": {
       "repo": "rajon369963-del/sovereign-study-commons-india",
@@ -26,7 +29,14 @@
     "max_primary_mutation_repos_per_run": 1,
     "optional_secondary_repo_read_only": true,
     "rolling_productive_runs_fairness_window": 3,
-    "severity_overrides_fairness": true
+    "severity_overrides_fairness": true,
+    "multi_repo_change_contract_first": true,
+    "final_integration_court_required": true
+  },
+  "account_sync": {
+    "account_a_lanes_01_05": "UPDATED_AND_DIRECTLY_ATTESTED_IN_CURRENT_CHATGPT_ACCOUNT",
+    "account_b_lanes_06_10": "IMPORT_PACK_READY_DIRECT_AUTOMATION_READBACK_PENDING_FROM_SECOND_ACCOUNT",
+    "credentials_or_quota_shared": false
   },
   "lanes": {
     "01": "Truth Radar / Canonical Controller",
@@ -63,7 +73,20 @@
     "requires_failure_conditions": true,
     "requires_repo_adapters": true,
     "requires_verifier_readback": true,
-    "requires_version_and_rollback_sha": true
+    "requires_version_and_rollback_sha": true,
+    "blind_copy_to_all_repos": false
+  },
+  "github_actions_hardening": {
+    "prefer_reusable_workflows_for_identical_orchestration": true,
+    "thin_repo_callers": true,
+    "critical_refs_prefer_immutable_sha": true,
+    "least_privilege_permissions": true,
+    "oidc_when_supported": true,
+    "workflow_security_review": true,
+    "reusable_workflow_required_check_is_caller_surface": true,
+    "test_skipped_needs_semantics": true,
+    "concurrency_is_not_process_termination_proof": true,
+    "new_parallel_features_require_canary": true
   },
   "safety": {
     "no_quota_or_rate_limit_evasion": true,
@@ -71,6 +94,7 @@
     "producer_not_final_verifier": true,
     "no_direct_main_by_default_even_if_unprotected": true,
     "simulation_not_live_pnl": true,
-    "forum_advice_is_hypothesis_until_verified": true
+    "forum_advice_is_hypothesis_until_verified": true,
+    "no_fake_stars_spam_or_fabricated_users": true
   }
 }
