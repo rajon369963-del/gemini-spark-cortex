@@ -1,6 +1,6 @@
 # AIR10 / MIGL — TRI-REPO 10-SCHEDULE FEDERATION V2
 
-Status: CANONICAL_OVERLAY_CANDIDATE
+Status: CANONICAL_OVERLAY_V2_ON_MERGE
 Date: 2026-09-11
 Scope: two authorized ChatGPT Plus accounts, 5 scheduled workers each (10 total), three public product repositories, one shared control plane.
 
