@@ -29,15 +29,18 @@ Core collision law: every worker fresh-reads all three repo health anchors, but 
 
 ## 📂 Repository Architecture
 
+The task surfaces below reflect the current repository tree; no queue directory is implied unless one is later created and verified.
+
 ```text
 gemini-spark-cortex/
 ├── .github/
 │   └── workflows/
 │       └── auto-verify.yml
 ├── tasks/
-│   ├── queue/
 │   ├── in_progress/
-│   └── completed/
+│   ├── completed/
+│   ├── stress_test/
+│   └── workspace_godmode_stress/
 ├── prompts/
 │   ├── TRI_REPO_10_SCHEDULE_FEDERATION_V2.md
 │   ├── TRI_REPO_FEDERATION_REGISTRY_V2.json
@@ -58,9 +61,9 @@ gemini-spark-cortex/
 ## 🚀 Worker Operating Pattern
 
 A bounded worker should:
-1. Fresh-read Cortex federation policy + newest receipt/lease.
+1. Fresh-read Cortex federation policy, current task surfaces, and newest relevant receipt/lease/watermark.
 2. Fresh-read the three target repo HEAD/health anchors.
-3. Select one highest-Pareto unowned effect.
+3. Select one highest-Pareto unowned effect from verified current state; do not invent a queue item that does not exist.
 4. Use branch/worktree isolation for mutation.
 5. Test, read back the physical effect and emit a durable receipt.
 6. If a reusable mechanism is discovered, emit a typed cross-repo knowledge atom rather than blind-copying code.
@@ -82,8 +85,8 @@ Forums/Reddit/GitHub Discussions are used as pain/hypothesis sources; official d
 
 ## 🤖 Gemini Spark Account 1 Example
 
-1. Inspect `tasks/queue/` and current federation policy.
-2. Claim a bounded task/lease.
+1. Inspect the verified current task/receipt/lease surfaces and federation policy.
+2. Claim a bounded unowned task/effect according to the existing coordination mechanism.
 3. Perform research/code synthesis using the appropriate repo-specific adapter.
 4. Create an isolated branch.
 5. Apply and test changes.
